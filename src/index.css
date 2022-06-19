@@ -11,8 +11,8 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: #8063FA;
-  border-bottom: solid 2px #D4CAFF;
+  background-color: #5EAAA8;
+  border-bottom: solid 2px #ffff;
 }
 
 header h1 {
@@ -25,7 +25,7 @@ header h1 {
 /* FORMS */
 form {
   display: flex;
-  background-color: #8063FA;
+  background-color: #5EAAA8;
 }
 
 input[type=text] {
@@ -34,17 +34,17 @@ input[type=text] {
   margin: 15px 10px 15px 15px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #5B45B9;
+  background-color: #A3D2CA;
   border-style: none;
   text-shadow: none;
   text-transform: uppercase;
-  color: #C7BCF8;
+  color: #FFF;
   letter-spacing: 2px;
   outline: none;
 }
 
 input[type=text]::-webkit-input-placeholder{
-  color: #C7BCF8;
+  color: #ffff;
   letter-spacing: 2px;
 }
 
@@ -57,7 +57,7 @@ input[type=submit] {
   font-size: .6em;
   margin: 15px 15px 15px 0; 
   padding: 10px;
-  background-color: #44338D;
+  background-color: #D1C145;
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -98,7 +98,7 @@ svg {
   background: #fff;
   width: 700px;
   margin: 70px auto;
-  box-shadow: 0 2px 0 rgb(133, 104, 250);
+  box-shadow: #A1B57D;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -111,7 +111,7 @@ svg {
 }
 
   .player:last-of-type {
-    border-bottom-color: #D4CAFF;
+    border-bottom-color: #5EAAA8;
   }
 
   .player-name:hover .remove-player {
@@ -120,7 +120,7 @@ svg {
 
   .player-name,
   .counter-score {
-    color: #2F2366;
+    color: #5EAAA8;
   }
 
   .player-name {
@@ -134,7 +134,7 @@ svg {
     border: none;
     outline: none;
     visibility: hidden;
-    color: #EF5350;
+    color: #96BB7C;
     cursor: pointer;
     margin: 0 10px 0 0;
     padding: 0;
@@ -166,7 +166,7 @@ svg {
 .stopwatch {
   padding: 15px 10px 5px 10px;
   margin: -5px -10px -5px 10px;
-  background: #5B45B9;
+  background: #5EAAA8;
 }
 
   .stopwatch-time {
@@ -177,7 +177,7 @@ svg {
 
   .stopwatch button {
     margin: 8px 5px;
-    background-color: #44338D;
+    background-color: #D1C145;
     border-radius: 5px;
     padding: 7px 8px;
     border: none;
@@ -191,7 +191,7 @@ svg {
   .stopwatch button:hover,
   input[type=submit]:hover {
     background: #fff;
-    color: #44338D;
+    color: #96BB7C;
     cursor: pointer;
   }
 
@@ -224,11 +224,11 @@ svg {
   }
 
   .increment:hover {
-    background: #83D97C;
+    background: #96BB7C;
   }
 
   .decrement:hover {
-    background: #EF5350;
+    background: #990000;
   }
 
   .counter-score {

@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Consumer } from './Consumer';
 import Player from './Player';
 
 const PlayerList = (props) => {
   return (
-    <React.Fragment>
-      {props.players.map( (player, index) =>
+    <Consumer>
+      { context => (
+        <React.Fragment>
+      {context.map( (player, index) =>
         <Player 
           {...player}
           key={player.id.toString()} 
@@ -15,11 +18,13 @@ const PlayerList = (props) => {
         />
       )}
     </React.Fragment>
+      )}
+    </Consumer>
+   
   );
 }
 
 PlayerList.propTypes = {
-  players: PropTypes.arrayOf(PropTypes.object),
   changeScore: PropTypes.func.isRequired,
   removePlayer: PropTypes.func.isRequired,
 };
